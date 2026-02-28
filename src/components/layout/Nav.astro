@@ -1,0 +1,36 @@
+---
+import { site } from '../../site.config';
+
+const links = site.nav;
+const currentPath = Astro.url.pathname;
+---
+
+<header class="w-full border-b border-border bg-cream/90 backdrop-blur-sm sticky top-0 z-50">
+  <nav class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+
+    <a href="/" class="font-display text-ink hover:text-gold transition-colors duration-200 text-sm sm:text-base">
+      Luminessa
+    </a>
+
+    <ul class="flex items-center gap-4 sm:gap-8">
+      {links.map(link => (
+        <li>
+          <a
+            href={link.href}
+            target={link.external ? '_blank' : undefined}
+            rel={link.external ? 'noopener noreferrer' : undefined}
+            class:list={[
+              'font-body text-sm sm:text-base transition-colors duration-200',
+              currentPath === link.href
+                ? 'text-gold border-b border-gold'
+                : 'text-ink-soft hover:text-ink',
+            ]}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))}
+    </ul>
+
+  </nav>
+</header>
