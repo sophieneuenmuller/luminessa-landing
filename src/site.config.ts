@@ -7,10 +7,10 @@ export const site = {
   author: {
     name: 'Sophie',
     email: 'sophie@luminessa.net',
-    discord: 'https://discord.com/users/TU_ID_AQUI',
-    github: 'https://github.com/TU_USUARIO_AQUI',
+    discord: 'https://discord.com/users/sophieneuenmuller',
+    github: 'https://github.com/sophieneuenmuller',
     forgejo: 'https://git.luminessa.net',
-    blogRss: 'https://blog.luminessa.net/index.xml',
+    blogRss: 'https://blog.luminessa.net/',
   },
 
   nav: [
@@ -23,8 +23,8 @@ export const site = {
     links: [
       { label: 'Email', href: 'mailto:sophie@luminessa.net' },
       { label: 'Forgejo',             href: 'https://git.luminessa.net',              external: true },
-      { label: 'Discord',             href: 'https://discord.com/users/TU_ID_AQUI',  external: true },
-      { label: 'GitHub',              href: 'https://github.com/TU_USUARIO_AQUI',    external: true },
+      { label: 'Discord',             href: 'https://discord.com/users/sophieneuenmuller',  external: true },
+      { label: 'GitHub',              href: 'https://github.com/sophieneuenmuller',    external: true },
     ],
   },
 };
